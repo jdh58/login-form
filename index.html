@@ -29,39 +29,54 @@
         <p class="intro-text">
             This is not a real online service! You know you need
             something like this in your life to help you realize
-            your deepest dreams. Sign up <em>now</em> to get
-            started.<br>You <em>know</em> you want to.
+            your deepest dreams.<br>Sign up <em>now</em> to get
+            started.<br><br>You <em>know</em> you want to.
         </p>
-
-        <div class="form-box">
-            <p>Let's do this!</p>
-            <form action="" method="">
-                <div class="first-name">
-                    <label for="first-name">First name</label>
-                    <input required type="text" name="first-name" id="first-name">
+            
+         <form action="" method="">
+            <fieldset class="form-box">
+                <p>Let's do this!</p>
+                <div class="info">
+                    <div class="first-name">
+                        <label for="first-name">First name</label>
+                        <input required type="text" name="first-name"
+                        id="first-name" minlength="1" maxlength="25"
+                        placeholder=" ">
+                    </div>
+                    <div class="last-name">
+                        <label for="last-name">Last name</label>
+                        <input required type="text" name="last-name"
+                        id="last-name" minlength="1" maxlength="25"
+                        placeholder=" ">
+                    </div>
+                    <div class="email">
+                        <label for="email">email</label>
+                        <input required type="email" name="email"
+                         id="email" placeholder=" ">
+                    </div>
+                    <div class="phone-number">
+                        <label for="phone-number">phone number</label>
+                        <input required type="tel" name="phone-number"
+                        id="phone-number" pattern="\d{3}[\-]?\d{3}[\-]?\d{4}"
+                        placeholder=" " title="Please enter a value phone number Ex: 971-555-4321">
+                    </div>
+                    <div class="password">
+                        <label for="password">password</label>
+                        <input required type="password" name="password"
+                        id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                        placeholder=" ">
+                    </div>
+                    <div class="confirm-password">
+                        <label for="confirm-password">confirm password</label>
+                        <input required type="password" name="confirm-password" 
+                        id="confirm-password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                        placeholder=" ">
+                    </div>
                 </div>
-                <div class="last-name">
-                    <label for="last-name">Last name</label>
-                    <input required type="text" name="last-name" id="last-name">
-                </div>
-                <div class="email">
-                    <label for="email">email</label>
-                    <input required type="email" name="email" id="email">
-                </div>
-                <div class="phone-number">
-                    <label for="phone-number">phone number</label>
-                    <input required type="number" name="phone-number" id="phone-number">
-                </div>
-                <div class="password">
-                    <label for="password">password</label>
-                    <input required type="password" name="password" id="password">
-                </div>
-                <div class="confirm-password">
-                    <label for="confirm-password">confirm password</label>
-                    <input required type="password" name="confirm-password" id="confirm-password"> 
-                </div>
-            </form>
-        </div>
+            </fieldset>
+            <button type="submit">Create Account</button>
+        </form>
+            <p class="login">Already have an account? <a href="">Log in</a></p>
     </div>
 </body>
 </html>

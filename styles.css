@@ -58,6 +58,7 @@ table {
 
 :root {
 	--logo-banner-height: 150px;
+	--left-margin: 40px;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -107,9 +108,101 @@ body {
 
 .container-right {
     width: 70%;
+	background-color: rgb(246, 246, 246);
+}
+
+.container-right > p {
+	margin-left: var(--left-margin);
+}
+
+.intro-text {
+	display: block;
+	line-height: 1.1;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	width: 75%;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.intro-text > em {
+	font-style: italic;
 }
 
 .form-box {
-	margin-top: calc(50vh - 200px);
-	height: 400px;
+	padding: 20px var(--left-margin);
+	padding-bottom: 30px;
+	background-color: #fff;
+	box-shadow: 2px 3px 4px  rgba(0, 0, 0, 0.351);
+	margin-bottom: 30px;
+}
+
+.form-box > p {
+	font-size: 22px;
+	font-weight: 500;
+	color: rgb(63, 70, 80);
+}
+
+.info {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10%;
+	text-transform: uppercase;
+	color:rgb(58, 43, 76);
+	font-weight: 600;
+	font-size: 13px;
+	letter-spacing: .15ch;
+}
+
+.info input, .info label {
+	display: block;
+}
+
+.info > div {
+	margin-top: 25px;
+}
+
+.info label {
+	margin-bottom: 3px;
+}
+
+.info input {
+	height: 2.25em;
+	width: 250px;
+}
+
+form > button {
+	color:rgb(246, 246, 246);
+	font-weight: 500;
+	font-size: 18px;
+	margin-left: var(--left-margin);
+	padding: 14px 28px;
+	border: none;
+	border-radius: 6px;
+	background-color: rgb(38, 139, 93);
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.351);
+}
+
+.login {
+	margin-top: 30px;
+}
+
+.login > a {
+	font-weight: 700;
+	text-decoration: none;
+	color:rgb(38, 139, 93);
+}
+
+.login > a:hover {
+	text-decoration: underline;
+}
+
+form input:invalid:not(:placeholder-shown) {
+	border: 2px solid red;
+	border-radius: 4px
+}
+
+form input:valid:not(:placeholder-shown) {
+	border: 2px solid green;
+	border-radius: 4px
 }
