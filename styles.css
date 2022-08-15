@@ -107,7 +107,7 @@ body {
 }
 
 .container-right {
-    width: 70%;
+    width: 60%;
 	background-color: rgb(246, 246, 246);
 }
 
@@ -154,11 +154,6 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10%;
-	text-transform: uppercase;
-	color:rgb(58, 43, 76);
-	font-weight: 600;
-	font-size: 13px;
-	letter-spacing: .15ch;
 }
 
 .info input, .info label {
@@ -171,11 +166,21 @@ body {
 
 .info label {
 	margin-bottom: 3px;
+	text-transform: uppercase;
+	color:rgb(58, 43, 76);
+	font-weight: 600;
+	font-size: 13px;
+	letter-spacing: .15ch;
 }
 
 .info input {
 	height: 2.25em;
 	width: 250px;
+	transition: background-color .1s;
+}
+
+.info input:focus {
+	background-color: rgb(252, 252, 252);
 }
 
 form > button {
